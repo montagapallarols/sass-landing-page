@@ -12,8 +12,48 @@ body {
   line-height: 1.6;
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .showcase {
   background-color: $primary-color;
   color: white;
   height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    // add space between logo and nav links
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
 }
