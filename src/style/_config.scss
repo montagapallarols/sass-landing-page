@@ -21,6 +21,12 @@ $vertical-space: 0.5rem;
   }
 }
 
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // Set text colour based on background
 @function set-text-colour($color) {
   @if (lightness($color) > 70) {

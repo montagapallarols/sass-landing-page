@@ -54,9 +54,7 @@ a {
   //   same as showcase-content
   &-content {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter;
 
     img {
       width: 50%;
