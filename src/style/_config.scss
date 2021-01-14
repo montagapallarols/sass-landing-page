@@ -8,3 +8,24 @@ $light-color: #f4f4f4;
 $text-color: #333;
 
 $vertical-space: 0.5rem;
+
+// shared styles
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+// Set text colour based on background
+@function set-text-colour($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return white;
+  }
+}

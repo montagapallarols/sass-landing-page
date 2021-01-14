@@ -22,7 +22,8 @@ a {
 
 .showcase {
   background-color: $primary-color;
-  color: white;
+  //   color: white;
+  color: set-text-colour($primary-color);
   height: 600px;
 
   nav {
@@ -77,4 +78,14 @@ a {
   padding: 0 30px;
   margin: 0 auto;
   overflow: auto;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: darken($primary-color, 15%);
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondary-color;
 }
